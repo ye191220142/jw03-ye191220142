@@ -26,7 +26,7 @@ public class SteganographyClassLoader extends ClassLoader {
 
     @Override
     protected Class<?> findClass(String name) throws ClassNotFoundException {
-
+        System.out.println("findClass is used");
         try {
             BufferedImage img = ImageIO.read(url);
 
